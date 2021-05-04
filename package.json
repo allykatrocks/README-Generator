@@ -1,0 +1,23 @@
+{
+  "name": "homework-README",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allykatrocks/homework-README.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allykatrocks/homework-README/issues"
+  },
+  "homepage": "https://github.com/allykatrocks/homework-README#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
+}

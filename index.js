@@ -36,7 +36,7 @@ inquirer.prompt([
         type: 'list',
         name: 'license',
         message: 'What license did you use?',
-        choices: ['MIT', 'Apache 2.0', 'none']
+        choices: ['MIT', 'Apache 2.0', 'GNU', 'BSD3', 'none']
     }
 ]).then((response) => {
       console.log(response);

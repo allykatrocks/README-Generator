@@ -1,5 +1,11 @@
+# readme
 
-      # Readme
-      Website: https://allykatrocks.github.io/homework-weather/
-      
-      
+![MIT](https://img.shields.io/badge/license-MIT-brightgreen)
+
+## Description
+
+stuff
+
+## Installation 
+
+idk

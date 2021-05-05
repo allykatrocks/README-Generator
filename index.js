@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-
+const generateMarkdown = require('./utils/generateMarkdown');
 inquirer.prompt([
     {
     type: 'input',
@@ -9,39 +9,36 @@ inquirer.prompt([
     },
     {
         type: 'input',
-        name: 'Description',
+        name: 'description',
         message: 'Give a brief description of your project.'
     },
     {
         type: 'input',
-        name: 'Table of Contents',
-        message: 'Input your Table of Contents here.'
-    },
-    {
-        type: 'input',
-        name: 'Installation Instructions',
+        name: 'installation',
         message: 'How would a user install this application?'
     },
     {
         type: 'input',
-        name: 'Usage',
+        name: 'usage',
         message: 'How would a user use this application?'
     },
     {
         type: 'input',
-        name: 'Contributing',
+        name: 'contributing',
         message: 'What are the guidelines for contribution?'
     },
     {
         type: 'input',
-        name: 'Tests',
+        name: 'tests',
         message: 'What are the testing guidelines?'
+    },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'What license did you use?',
+        choices: ['MIT', 'Apache 2.0', 'none']
     }
 ]).then((response) => {
       console.log(response);
-      fs.writeFile('Readme2.md', `
-      # ${response.title}
-      Website: https://allykatrocks.github.io/homework-weather/
-      
-      `, (err) => err ? console.log(err): console.log('success'));
+      fs.writeFile('Readme2.md', generateMarkdown(response), (err) => err ? console.log(err): console.log('success'));
   })

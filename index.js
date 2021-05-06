@@ -37,6 +37,11 @@ inquirer.prompt([
         name: 'license',
         message: 'What license did you use?',
         choices: ['MIT', 'Apache 2.0', 'GNU', 'BSD3', 'none']
+    },
+    {
+        type: 'input',
+        name: 'questions',
+        message: 'Enter your Github, email, and any instructions on how to reach you.'
     }
 ]).then((response) => {
       console.log(response);

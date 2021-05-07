@@ -1,4 +1,4 @@
-# readme
+# REAdme Generator
 
 ![MIT](https://img.shields.io/badge/license-MIT-brightgreen)
 
@@ -7,26 +7,30 @@
 [Description](#description)
 [Installation](#installation)
 [Usage](#usage)
+[Contributing](#contributing)
+[Tests](#test)
+[License](#license)
+[Questions](#questions)
 
 ## Description
 
-stuff
+This application creates a basic template for a readme file
 
 ## Installation 
 
-ya know
+A user needs VS Code and Node.js to run tis application
 
 ## Usage
 
-right
+A user simply follows the prompts in the command line.
 
 ## Contributing
 
-stuff
+Please don't change the original code without consulting me first.
 
 ## Tests
 
-stuff
+None at this time
 
 ## License
 
@@ -35,4 +39,4 @@ A short and simple permissive license with conditions only requiring preservatio
 
 ## Questions
 
-reach out touch me
+allykatrocks, beatles101@cox.net, email is best option
